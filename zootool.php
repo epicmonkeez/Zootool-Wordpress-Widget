@@ -1,16 +1,16 @@
 <?php
-// ZOZ Grafisch ontwerp - ZOO WIDGET v.1
+// ZOZ Grafisch ontwerp - ZOO WIDGET v.1.0
 // http://www.zetozet.nl
 class Zootool_Widget_Framework extends WP_Widget {
 	function zoo_Widget_Framework() {
 		$widget_ops = array('classname' => 'zootool_widget_framework', 'description' => __( 'ZOZ Framework - 
-		Zoo v.1.0') );
-		$this->WP_Widget('zootool_widget_framework', __('ZOZ Framework - Zoo v.1.0'), $widget_ops);
+		Zootool v.1.0') );
+		$this->WP_Widget('zootool_widget_framework', __('ZOZ Framework - Zootool v.1.0'), $widget_ops);
 	}
 
 	function widget($args, $instance) {		
 		extract( $args );
-		$default = array('widget_title'=>__('Latest Zoo','framework'), 'id'=> '', 'qty'=>9 );			
+		$default = array('widget_title'=>__('Latest Zootool Media','framework'), 'id'=> '', 'qty'=>9 );			
 		$instance = wp_parse_args($instance, $default);			
 		$widget_title = $instance['widget_title'];
 		$id = $instance['id'];
@@ -30,7 +30,7 @@ class Zootool_Widget_Framework extends WP_Widget {
 		    document.documentElement.firstChild.appendChild(zb);
 		  })();
 		  </script>
-		  <p><a rel="nofollow" class="followme" href="http://www.zoo.com/photos/<?php echo $id; ?>/">More Zoo Pages</a></p>
+		  <p><a rel="nofollow" class="followme" href="http://www.zoo.com/photos/<?php echo $id; ?>/">More Zootool Pages</a></p>
 		</div>
 		<?php
 		echo $after_widget;		

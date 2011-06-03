@@ -1,8 +1,9 @@
 <?php
 // ZOZ Grafisch ontwerp - ZOO WIDGET v.1.0
 // http://www.zetozet.nl
+
 class Zootool_Widget_Framework extends WP_Widget {
-	function zoo_Widget_Framework() {
+	function Zootool_Widget_Framework() {
 		$widget_ops = array('classname' => 'zootool_widget_framework', 'description' => __( 'ZOZ Framework - 
 		Zootool v.1.0') );
 		$this->WP_Widget('zootool_widget_framework', __('ZOZ Framework - Zootool v.1.0'), $widget_ops);

@@ -1,1 +1,13 @@
 First version off the Zootool Widget for Wordpress. Based on the FLICR Widget by Positive web - www.positive.web.id
+
+Add the following line off code to your functions.php in your theme:
+
+include_once( TEMPLATEPATH . '/zootool.php' );
+For the styling I used the css provided by Zootool Tools. This is the css code I used.
+
+<style>
+#zootool-badge {line-height:0px;}
+#zootool-badge img {height:60px; width:60px; border:0;}
+#zootool-badge ul {list-style:none; padding:0; margin:0;}
+#zootool-badge li {background:rgb(33,33,33); height:60px; width:60px; border:0; margin:0px 10px 10px 0px; float:left; list-style: none; padding:0;}
+</style>
